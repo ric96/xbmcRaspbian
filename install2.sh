@@ -37,3 +37,4 @@ sed -i 's/-msse2//' lib/libsquish/Makefile
 sed -i 's/-DSQUISH_USE_SSE=2//' lib/libsquish/Makefile
 make
 sudo make install
+sudo apt-get install usbmount
