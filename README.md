@@ -30,12 +30,14 @@ create a new file with
    sudo nano /var/lib/polkit-1/localauthority/50-local.d/xbmc.pkla
    
  Add this to the new file
+ 
     [Actions for xbmc user]
     Identity=unix-user:<your user name>
     Action=org.freedesktop.upower.*;org.freedesktop.consolekit.system.*
     ResultAny=yes
     ResultInactive=yes
     ResultActive=yes
+    
 press ctrl+x and then y and enter
 
 If you want to change or remove some of the menu options in the shutdown window just edit the /usr/share/xbmc/addons/skin.confluence/720p/DialogButtonMenu.xml file. There you can change the <visible> option to “no” if you want to hide a button for example.
